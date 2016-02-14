@@ -1,6 +1,8 @@
 
 
-SRCS := fit.c fit_product.c fit_crc.c fit_convert.c examples/decode/decode.c
+SRCS := fit.c fit_product.c fit_crc.c fit_convert.c cvt.c
+#examples/decode/decode.c
+
 OBJS := $(patsubst %.c,%.o,$(SRCS))
 
 %.o : %.c
